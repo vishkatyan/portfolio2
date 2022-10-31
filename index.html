@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vishakha's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="navbar" data-aos="zoom-out">
+        <div id="logo">
+            <img src="logo.png" alt="MyCourses.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#qual">Qualification</a></li>
+            <li class="item"><a href="#skill">Skills & Achievements</a></li>
+            <li class="item"><a href="#experience">Experience</a></li>
+            <!-- <li class="item"><a href="login.html">Login</a></li> -->
+        </ul>
+    </nav>
+
+    <section id="home" data-aos="fade-down">
+        <h1 class="h-primary" data-aos="zoom-in-up">Hi, I am Vishakha</h1>
+        <p data-aos="zoom-in">Website Developer, Coding Enthusiast</p> <br>
+        <a href="https://twitter.com/Vishkatyan" class="fa fa-twitter" style="margin-left: -1000px;"></a>  
+        <a href="https://www.linkedin.com/in/vishkatyan/" class="fa fa-linkedin" style="margin-left: -1000px;"></a>  
+        <a href="https://github.com/vishkatyan" class="fa fa-github" style="margin-left: -1000px;"></a>  
+        <button class="btn" data-aos="zoom-in" onclick="window.location.href='https://drive.google.com/file/d/1R9fY8GKeq0EhEOx6o731baBBzxWbAc0z/view?usp=sharing';">Download CV</button> 
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center" data-aos="fade-left">Explore about myself</h1>
+        <div id="services" data-aos="zoom-in-up">
+            <div class="box">
+                <img src="education.jpg" alt="Qualification" id="qual">
+                <h2 class="h-secondary center">Qualification</h2>
+                <p class="center"> *CBSE Secondary Examination from TRM Public School,Modinagar, Gzb,UP with 8.6 CGPA. <br> 
+                * CBSE Senior Secondary Examination from TRM Public School, Modinagar, Gzb, UP with 75.40 %.  <br>
+                * Bachelor of Computer Applications from Dr. K.N. Modi Institute of Engineering & Technology, Modinagar with 87.8% (till 5th sem). <br>
+                * Doing Master of Computer Applications from RD Engineering College, Duhai, Ghaziabad, UP. </p>
+                
+
+            </div>
+            <div class="box" data-aos="zoom-in-up"id="skill">
+                <img src="languages.jpg" alt="Skills & Achievements" >
+                <h2 class="h-secondary center">Skills & Achievements</h2>
+                <p class="center"> <strong>Languages:</strong> C , Java, Javascript. <br> 
+                    <strong>Frontend: </strong>Html5 , Css3, Sass, Javascript. <br>
+                    <strong>Framework: </strong>Bootstrap. <br>
+                    <strong>Developer Tools: </strong> IntelliJ , Visual Studio code. <br>
+                    <strong>Extra:</strong> Github , Data Structures.
+                 Achievements:</p>
+                    
+            </div>
+            <div class="box" data-aos="zoom-in-up">
+                <img src="login.jpg" alt="Experience" id="experience">
+                <h2 class="h-secondary center">Experience</h2>
+                <p class="center"> <strong>Internshala Campus Ambassador Program - Internshala Student Partner ISP19 (Part-time) </strong> <br>
+                    Sep 2020 - Nov 2020 (3 Mon)<br> *Promote Internshala internships and trainings among my colleagues. <br>    
+                    * Help my peers to learn new and different skills via Internshala training. <br>
+                   <strong>Content Creator Intern at QuestionPapersHub-QPH (Internship) </strong> <br>
+May 2021 - Jun 2021 (1 Mon) <br> * Create optimized Content for the website.
+</p>
+                    
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-left
+">
+        <h1 class="h-primary center" style="color: white;">Connect</h1>
+        <div id="contact-box">
+            <form method="POST" action="contact.php">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="name" name="name" id="name" placeholder="Enter your name...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="mail" id="email" placeholder="Enter your email...">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your phone...">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+                </div>
+                <button class="btn" name="submit">Send</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; Vishakha's Portfolio. All rights reserved!
+            <a href="https://twitter.com/Vishkatyan" class="fa fa-twitter"></a>  
+            <a href="https://www.linkedin.com/in/vishkatyan/" class="fa fa-linkedin"></a>  
+            <a href="https://github.com/vishkatyan" class="fa fa-github"></a>  
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 250,
+        duration: 1000
+    });
+  </script>
+
+</html>
